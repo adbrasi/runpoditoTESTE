@@ -1,0 +1,12 @@
+{
+  "input": {
+    "prompt": "beautiful anime girl, detailed face, high quality, masterpiece",
+    "negative_prompt": "nsfw, nude, naked, porn, explicit, low quality, blurry",
+    "width": 512,
+    "height": 512,
+    "steps": 20,
+    "cfg": 7.0,
+    "seed": 42,
+    "model": "AbyssOrangeMix2_sfw.safetensors"
+  }
+}

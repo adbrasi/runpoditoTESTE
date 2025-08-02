@@ -1,0 +1,22 @@
+[project]
+uuid = "your-project-uuid-here"
+name = "comfyui-abyssorangemix2"
+
+[build]
+base_image = "runpod/pytorch:2.4.0-py3.11-cuda12.4.1-devel-ubuntu22.04"
+python_version = "3.11"
+
+[runtime]
+handler = "handler.py"
+cuda_version = "12.4"
+python_executable = "python3"
+
+[runtime.environment_variables]
+PYTHONPATH = "/ComfyUI:$PYTHONPATH"
+COMFYUI_PATH = "/ComfyUI"
+
+[resources]
+cpu = 4
+memory = 16
+gpu = "RTX4090"
+gpu_memory = 16
